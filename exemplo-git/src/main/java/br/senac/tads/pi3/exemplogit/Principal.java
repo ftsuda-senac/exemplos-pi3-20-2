@@ -24,6 +24,7 @@ public class Principal {
         
         System.out.println("Exemplo Git");
         System.out.println("Exemplo Commit 2");
+        System.out.println("Quero causar conflito");
     }
     
 }
