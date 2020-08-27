@@ -18,6 +18,7 @@ public class Principal {
         System.out.println("Exemplo Git");
         System.out.println("Exemplo Commit 2");
         System.out.println("teste - Miguel Castro");
+        System.out.println("teste - Miguel Castro");
     }
     
 }
