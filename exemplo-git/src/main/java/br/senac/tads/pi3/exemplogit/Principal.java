@@ -16,7 +16,7 @@ public class Principal {
      */
     public static void main(String[] args) {
         System.out.println("Exemplo Git");
-        System.out.println("Exemplo Git - sout 2");
+        System.out.println("Exemplo Commit 2");
     }
     
 }
