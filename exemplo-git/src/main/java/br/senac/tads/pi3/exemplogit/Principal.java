@@ -30,6 +30,7 @@ public class Principal {
         System.out.println("Valor teste1: " + --teste2);
         
         System.out.println("Exemplo Git");
+        System.out.println("Miguel Castro");
 
     }
     
