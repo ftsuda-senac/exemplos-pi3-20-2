@@ -12,6 +12,13 @@ import java.util.Scanner;
  * @author fedts
  */
 public class Principal {
+    
+    public static void mostrarTabuada(int num) {
+        System.out.println("Tabuada do " + num);
+        for (int i = 0; i < 11; i++) {
+            System.out.println("" + num + " X " + i + " = " + (num*i));
+        }
+    }
 
     /**
      * @param args the command line arguments
@@ -34,6 +41,10 @@ public class Principal {
         System.out.println("Valor teste1: " + --teste2);
 
         System.out.println("Exemplo Git");
+        
+        System.out.println("Qual tabuada será calculada?");
+        int num = entrada.nextInt();
+        mostrarTabuada(num);
 
     }
     
