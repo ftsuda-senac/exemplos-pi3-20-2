@@ -25,21 +25,14 @@ public class Principal {
         
         teste1 *= 210;
         System.out.println("Teste1 x 210 = " + teste1);
-        System.out.println("texto 1");
-        
+
         teste1 = 0;
         System.out.println("Valor teste1: " + teste1++);
         
         int teste2 = 0;
         System.out.println("Valor teste1: " + --teste2);
-        
-        System.out.println("texto 2");
-        
+
         System.out.println("Exemplo Git");
-        System.out.println("Quero causar conflito");
-        System.out.println("texto 3");
-        System.out.println("Miguel Castro");
-        System.out.println("teste teste miguel");
 
     }
     
