@@ -15,6 +15,13 @@ public class Principal {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        int teste1 = 0;
+        System.out.println("Valor teste1: " + teste1++);
+        
+        int teste2 = 0;
+        System.out.println("Valor teste1: " + ++teste2);
+        
         System.out.println("Exemplo Git");
         System.out.println("Exemplo Commit 2");
     }
