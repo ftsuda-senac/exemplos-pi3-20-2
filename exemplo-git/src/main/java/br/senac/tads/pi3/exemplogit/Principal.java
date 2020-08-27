@@ -20,7 +20,7 @@ public class Principal {
 
         Scanner entrada = new Scanner(System.in);
         
-        System.out.print("Digite um número inteiro: ");
+        System.out.println("Digite um número inteiro: ");
         int teste1 = entrada.nextInt();
         System.out.println("Valor teste1 + 1: " + teste1++);
         
