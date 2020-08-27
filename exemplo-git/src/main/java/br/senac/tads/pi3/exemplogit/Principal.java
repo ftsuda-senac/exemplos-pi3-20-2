@@ -16,15 +16,21 @@ public class Principal {
      */
     public static void main(String[] args) {
         
+        System.out.println("texto 1");
+        
         int teste1 = 0;
         System.out.println("Valor teste1: " + teste1++);
         
         int teste2 = 0;
         System.out.println("Valor teste1: " + ++teste2);
         
+        System.out.println("texto 2");
+        
         System.out.println("Exemplo Git");
         System.out.println("Exemplo Commit 2");
         System.out.println("Quero causar conflito");
+        
+        System.out.println("texto 3");
     }
     
 }
