@@ -11,7 +11,7 @@ import java.time.LocalDate;
 import java.time.Period;
 
 public class Dados {
-    
+
     private Integer id;
     
     private String nome;
@@ -21,6 +21,8 @@ public class Dados {
     private BigDecimal peso;
     
     private BigDecimal altura;
+    
+    private String[] interesses;
 
     public Integer getId() {
         return id;
@@ -61,6 +63,15 @@ public class Dados {
     public void setAltura(BigDecimal altura) {
         this.altura = altura;
     }
+
+    public String[] getInteresses() {
+        return interesses;
+    }
+
+    public void setInteresses(String[] interesses) {
+        this.interesses = interesses;
+    }
+    
     
     public BigDecimal getImc() {
         if (peso != null && altura != null) {
@@ -69,6 +80,22 @@ public class Dados {
             return imc;
         }
         return null;
+    }
+    
+    public int getImcResult() {
+        BigDecimal imc = getImc();
+        if (imc.compareTo(new BigDecimal("18.5")) < 0) {
+            return 1; // MAGREZA
+        } else if (imc.compareTo(new BigDecimal("18.5")) >= 0 && imc.compareTo(new BigDecimal("25")) < 0) {
+            return 2; // NORMAL
+        } else if (imc.compareTo(new BigDecimal("25")) >= 0 && imc.compareTo(new BigDecimal("30")) < 0) {
+            return 3; // SOBREPESO
+        } else if (imc.compareTo(new BigDecimal("30")) >= 0 && imc.compareTo(new BigDecimal("40")) < 0) {
+            return 4; // OBESIDADE
+        } else if (imc.compareTo(new BigDecimal("40")) > 0) {
+            return 5; // OBESIDADE GRAVE
+        }
+        return 0;
     }
     
     public Integer getIdade() {

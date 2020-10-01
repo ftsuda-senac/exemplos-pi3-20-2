@@ -1,0 +1,11 @@
+.magreza,
+.sobrepeso{
+    background-color: yellow;
+}
+.normal {
+     background-color: green;
+}
+.obesidade,
+.obesidade-grave {
+    background-color: red;
+}
