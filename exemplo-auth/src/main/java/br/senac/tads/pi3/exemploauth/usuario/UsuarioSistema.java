@@ -60,8 +60,8 @@ public class UsuarioSistema implements Serializable {
     }
 
     public final void setSenha(String senhaAberta) {
-        //this.hashSenha = BCrypt.hashpw(senhaAberta, BCrypt.gensalt());
-        this.hashSenha = senhaAberta;
+        this.hashSenha = BCrypt.hashpw(senhaAberta, BCrypt.gensalt());
+        //this.hashSenha = senhaAberta;
     }
 
     public List<Papel> getPapeis() {
@@ -74,6 +74,7 @@ public class UsuarioSistema implements Serializable {
 
     public boolean validarSenha(String senhaAberta) {
         return BCrypt.checkpw(senhaAberta, hashSenha);
+        //return senhaAberta.equals(hashSenha);
     }
 
     public boolean verificarPapel(String nomePapel) {

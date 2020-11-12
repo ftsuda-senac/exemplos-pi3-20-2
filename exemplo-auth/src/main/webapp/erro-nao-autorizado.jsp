@@ -1,5 +1,4 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,8 +6,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1><c:out value="${titulo}" /></h1>
-        <h2><c:out value="${msg}" /></h2>
-        <a href="${pageContext.request.contextPath}/home">Voltar</a>
+        <h1>ERRO - ACESSO NÃO AUTORIZADO</h1>
+        <a href="${pageContext.request.contextPath}/home">Voltar para HOME</a>
     </body>
 </html>
