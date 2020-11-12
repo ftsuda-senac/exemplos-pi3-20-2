@@ -15,9 +15,9 @@ import org.mindrot.jbcrypt.BCrypt;
  */
 public class UsuarioSistema implements Serializable {
 
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-	private String username;
+    private String username;
 
     private String nomeCompleto;
 
@@ -60,7 +60,8 @@ public class UsuarioSistema implements Serializable {
     }
 
     public final void setSenha(String senhaAberta) {
-        this.hashSenha = BCrypt.hashpw(senhaAberta, BCrypt.gensalt());
+        //this.hashSenha = BCrypt.hashpw(senhaAberta, BCrypt.gensalt());
+        this.hashSenha = senhaAberta;
     }
 
     public List<Papel> getPapeis() {
